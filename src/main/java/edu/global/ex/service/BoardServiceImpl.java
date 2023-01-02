@@ -49,7 +49,7 @@ public class BoardServiceImpl implements BoardService {
         return boardMapper.delete(board);
     }
 
-      // 반드시 붙어야 하는 항목
+    @Transactional // 반드시 붙어야 하는 항목
     @Override
     public void registerReply(BoardVO boardVO) {
 
